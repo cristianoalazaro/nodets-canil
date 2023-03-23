@@ -23,4 +23,4 @@ server.use((req, res) => {
     res.send('Page not found!');
 })
 
-server.listen(process.env.PORT, () => console.log('Server is running'));
+server.listen(process.env.PORT, () => console.log(`Server is running at port = ${process.env.PORT}`));
