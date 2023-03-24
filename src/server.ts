@@ -20,7 +20,7 @@ server.use(mainRoutes);
 
 //Route not found
 server.use((req, res) => {
-    res.send('Page not found!');
+    res.render('pages/404');
 })
 
 server.listen(process.env.PORT, () => console.log(`Server is running at port = ${process.env.PORT}`));
